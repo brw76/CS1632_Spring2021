@@ -36,7 +36,13 @@ public class StepDefinitions {
 	@When("I rent cat number {int}")
 	public void iRentCatNumber(Integer id) {
 		// TODO: Implement
-		fail();
+		
+	}
+	
+	@When("I return cat number {int}")
+	public void iReturnCatNumber(Integer int1) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
 	}
 	
 	@Then("the listing is: {string}")
@@ -54,5 +60,11 @@ public class StepDefinitions {
 	public void theRentIsUnsuccessful() {
 		// TODO: Implement
 		fail();
+	}
+	
+	@Then("the return is unsuccessful")
+	public void theReturnIsUnsuccessful() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
 	}
 }
